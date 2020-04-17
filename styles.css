@@ -1,0 +1,843 @@
+/* 
+
+(Article) Title    font-family: 'Roboto', sans-serif;
+(Date)             font-family: 'Oswald', sans-serif;
+(section title)    font-family: 'Merriweather', serif;
+(header1)          font-family: 'Glegoo', serif; 
+
+*/
+
+/* General====================================== */
+.wrapper {
+  background-color: gray;
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Oswald", sans-serif;
+
+  max-width: 1500px;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Glegoo", serif;
+  font-size: 2rem;
+}
+
+span {
+  font-family: "Oswald", sans-serif;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Header ================================================== */
+.header-img {
+  background-image: radial-gradient(black, transparent 90%),
+    url("pictures/night.jpg");
+  background-size: cover;
+}
+
+.story-img {
+  background-image: radial-gradient(black, transparent 90%),
+    url("pictures/kamagasaki.jpg");
+  background-size: cover;
+  /* min-height: 300px; */
+}
+
+.story-img nav img {
+  display: none;
+}
+
+header div {
+  padding: 0 6rem;
+}
+
+/* .story-header {
+  position: relative;
+} */
+.story-header img {
+  filter: brightness(70%);
+  display: block;
+}
+
+/* .story-header ul {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  left: 0;
+} */
+
+.story-header h3 {
+  top: auto;
+  bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.story-header span {
+  font-size: 0.9rem;
+}
+
+.kamagasaki div p {
+  font-family: "Merriweather", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.kamagasaki div p span {
+  /* line-height: 2rem; */
+  display: inline;
+  font-weight: 700;
+  /* position: static; */
+  font-family: "Merriweather", sans-serif;
+}
+
+.kamagasaki .doya {
+  font-style: italic;
+  background: rgba(0, 0, 0, 0);
+  font-size: 1rem;
+  padding: 0;
+}
+
+header .btn {
+  text-align: right;
+}
+
+/* .subpage-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+header span i {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.menu-active {
+  display: block;
+}
+
+header nav ul {
+  display: none;
+}
+
+/* header nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+} */
+
+header ul li {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+header ul li a:hover {
+  color: firebrick;
+  transition: 0.5s ease;
+}
+
+header div {
+  text-align: center;
+}
+
+.logo {
+  max-width: 70%;
+}
+
+h1 {
+  font-style: italic;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  top: 2rem;
+  bottom: auto;
+}
+
+/* Articles===================================================== */
+
+.border {
+  border-top: 15px solid rgb(83, 79, 79);
+  margin-bottom: 1rem;
+}
+
+.latest-story,
+.food,
+.gallery,
+.history,
+.live-strong,
+.ruthless-environment,
+.not-found,
+.contact,
+.sources {
+  background-color: rgb(37, 36, 36);
+  color: white;
+  padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.places,
+.culture {
+  padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.latest-story article div a.top {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 0.5rem;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid gray;
+
+  /* position: relative; */
+}
+
+.latest-story a.top {
+  position: relative;
+  display: block;
+}
+
+.top-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
+
+.latest-story a.last {
+  border-bottom: none;
+}
+
+span.sub {
+  display: none;
+}
+
+.latest-story div span.date {
+  position: absolute;
+  top: auto;
+  bottom: 0.7rem;
+}
+
+.latest-story p {
+  margin: 0;
+}
+
+.more {
+  text-align: center;
+  margin: 3rem auto 2rem auto;
+}
+
+.more a {
+  padding: 0.5rem 3rem;
+  border: 1px solid gray;
+
+  font-size: 1rem;
+}
+
+.more a:hover {
+  background-color: firebrick;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.more a {
+  border: 1px solid white;
+}
+
+.places .article,
+.food .article,
+.culture .article {
+  position: relative;
+  display: block;
+}
+
+.subpage-h3 {
+  position: static;
+  margin-top: 8rem;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 0.5rem;
+
+  margin: 0;
+}
+
+.places span,
+.food span,
+.culture span {
+  position: absolute;
+  top: auto;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  padding-left: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.gallery article div {
+  margin: 0;
+}
+
+.not-found {
+  position: relative;
+}
+
+.not-found .error-message {
+  position: absolute;
+  top: 5rem;
+  bottom: auto;
+  left: 1rem;
+  right: 17rem;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgba(255, 255, 255, 0.1));
+
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  font-family: "Merriweather", serif;
+}
+
+/* Contact =============================== */
+label,
+input,
+textarea {
+  display: block;
+  margin: 0.3rem auto 0 auto;
+  width: 100%;
+}
+
+.contact p {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  margin: 1rem 5rem;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.contact .button-submit {
+  background-color: firebrick;
+  color: white;
+  padding: 0.5rem;
+  max-width: 30%;
+}
+
+/* Sources ============================= */
+
+.unsplush .third,
+.unsplush .fifth,
+.seventh,
+.eighth {
+  text-align: center;
+}
+.source-h3 {
+  position: static;
+  margin: 2rem 6rem 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.burst,
+.hatchful,
+.wikipedia {
+  margin-top: 4rem;
+}
+
+.unsplush .second,
+.unsplush .sixth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.unsplush .forth {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.wiki {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Footer ================================ */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-top: 1px solid gray;
+  margin: 0;
+  padding: 0;
+}
+
+footer div {
+  padding: 1rem 9rem 0rem 9rem;
+}
+
+footer p a {
+  text-decoration: underline;
+}
+
+footer i {
+  border: 1px solid white;
+  border-radius: 50%;
+
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 425px) {
+  .not-found .error-message {
+    font-size: 0.9rem;
+    top: 5rem;
+    left: 1rem;
+    right: 16rem;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .latest-story,
+  .food,
+  .places,
+  .culture,
+  .gallery,
+  .history,
+  .live-strong,
+  .ruthless-environment,
+  .not-found,
+  .contact,
+  .sources {
+    padding: 1rem 2rem;
+  }
+
+  /* .story-img {
+    background-image: none;
+  } */
+
+  /* .story-img nav img {
+    display: block;
+  } */
+
+  header .btn {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  header nav ul {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .subpage-h3 {
+    padding-top: 12rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  header li a {
+    font-size: 1.2rem;
+  }
+
+  .top-p {
+    font-size: 1rem;
+    padding-right: 10rem;
+  }
+
+  /* .latest-story section div a.top {
+    grid-template-columns: 1fr 3fr;
+    } */
+
+  .places article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    top: 2.5rem;
+  }
+
+  .food h3,
+  .culture h3 {
+    font-size: 1.4rem;
+  }
+
+  .food span,
+  .culture span {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    max-width: 50%;
+  }
+
+  .places .kamagasaki {
+    display: block;
+  }
+
+  .story-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .story-header span {
+    font-size: 1.1rem;
+  }
+
+  .kamagasaki p,
+  .kamagasaki div p span {
+    font-size: 1rem;
+  }
+
+  footer div {
+    padding: 1rem 14rem 0rem 14rem;
+  }
+
+  footer i {
+    font-size: 1.5rem;
+  }
+
+  .not-found .error-message {
+    top: 6.5rem;
+    left: 2rem;
+    right: 23rem;
+    padding: 1rem 2rem;
+  }
+  .not-found .error-message p {
+    font-size: 1.2rem;
+  }
+
+  form {
+    margin: 1rem 8rem;
+  }
+
+  .source-h3 {
+    font-size: 1.3rem;
+  }
+  .wiki a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .story-header h3 {
+    font-size: 2.1rem;
+  }
+
+  .story-header span {
+    font-size: 1.4rem;
+  }
+
+  .latest-story article div a.top {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  header li a {
+    font-size: 1.4rem;
+  }
+
+  .kamagasaki {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .kamagasaki .text {
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+
+  .kamagasaki div p {
+    margin: 0 auto 1rem auto;
+  }
+
+  footer div {
+    padding: 1rem 15rem 0rem 15rem;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  .not-found .error-message {
+    top: 6.5rem;
+    left: 2rem;
+    right: 30rem;
+  }
+
+  .not-found .error-message p {
+    font-size: 1.5rem;
+  }
+
+  form {
+    margin: 1rem 10rem;
+  }
+
+  .source-h3 {
+    font-size: 1.5rem;
+  }
+  .wiki a {
+    font-size: 1.3rem;
+  }
+
+  form {
+    padding: 1rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .latest-story,
+  .food,
+  .places,
+  .culture,
+  .gallery,
+  .history,
+  .live-strong,
+  .ruthless-environment,
+  .not-found,
+  .sources {
+    padding: 0 5rem 1rem 5rem;
+  }
+
+  form {
+    padding: 1rem 9rem;
+  }
+
+  header li a {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .story-header h3 {
+    font-size: 2.5rem;
+  }
+
+  .story-header span {
+    font-size: 1.8rem;
+  }
+
+  .latest-story article div a.top {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .places article {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .culture article,
+  .food article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    top: 3.5rem;
+  }
+
+  .border {
+    border-top: 15px solid rgb(83, 79, 79);
+  }
+
+  .food h3,
+  .culture h3 {
+    font-size: 1.17rem;
+  }
+
+  .food span,
+  .culture span {
+    font-size: 0.8rem;
+  }
+
+  .latest-story article div p {
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .top-p {
+    font-size: 1.2rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  span.sub {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    bottom: auto;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .latest-story div span.date {
+    bottom: 0;
+  }
+
+  .kamagasaki div p,
+  .kamagasaki div p span {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .kamagasaki div p {
+    margin: 0 auto 1rem auto;
+  }
+
+  footer div {
+    padding: 1rem 25rem 0rem 25rem;
+  }
+
+  footer p {
+    font-size: 2rem;
+  }
+
+  .not-found .error-message {
+    top: 7rem;
+    left: 5rem;
+    right: 40rem;
+  }
+
+  .not-found .error-message p {
+    font-size: 1.8rem;
+  }
+
+  form {
+    margin: 1rem 8rem;
+  }
+
+  label {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  textarea {
+    height: 15rem;
+    font-size: 1.2rem;
+  }
+
+  .contact .button-submit {
+    font-size: 1rem;
+  }
+
+  tbody,
+  thead {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .kamagasaki div p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .story-header h3 {
+    bottom: 10rem;
+  }
+
+  footer div {
+    padding: 1rem 35rem 0rem 35rem;
+  }
+
+  .not-found .error-message {
+    top: 7rem;
+    left: 5rem;
+    right: 55rem;
+  }
+
+  form {
+    padding: 1rem 20rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .wrapper,
+  footer {
+    background-color: rgb(37, 36, 36);
+  }
+}
